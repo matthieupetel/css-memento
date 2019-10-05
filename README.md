@@ -11,7 +11,7 @@ CSS selectors
 
 ### :nth-child
 
-```
+```css
 .class:nth-child(2n+1) {}
 ```
 
@@ -75,3 +75,40 @@ To summarize in a table:
 | **3**     | 7         | 13        | 16        | 12        | 13        | -         |
 | **4**     | 9         | 17        | 20        | 16        | 18        | -         |
 | **5**     | 11        | 21        | 24        | 20        | 23        | -         |
+
+
+Flex shorthand property
+-----------------------
+
+```css
+.flex-item {
+    flex: 0 1 auto; /* initial values */
+}
+```
+
+The `flex` shorthand property applies rules on a flex item to tell how to handle dimensions
+to fit inside its flex container.
+
+It can accept up to 3 properties (one min) which stand for respectively `flex-grow`, `flex-shrink` and `flex-basis`.
+
+**With one value:**
+
+Base values are:  
+- `flex: auto`: stands for `1 1 auto`, item will grow and shrink if necessary to fit all the space available.
+- `flex: initial`: stands for `initial initial initial`, item will not grow but will shrink if necessary not to overflow its
+container.
+- `flex: none`: stands for `0 0 auto`, item will neither grow nor shrink.
+
+One unitless value: flex-grow
+- ex `flex: 2`: sets `flex-grow` to `2`, `flex-shirnk` to `1` and `fex-basis` to `0`.
+
+One value with unit: flex-basis  
+- ex `flex: 50px`: sets `flex-grow` to `1`, `flex-shrink` to `1` and `flex-basis` to `50px`.
+
+**With two values:** the value with unit is for `flex-basis`
+- ex `flex: 2 2`: sets `flex-grow` to `2`, `flex-shirnk` to `2` and `fex-basis` to `0`.
+- ex `flex: 1 300px`: sets `flex-grow` to `1`, `flex-shirnk` to `1` and `fex-basis` to `300px`.
+
+**With three values:**
+- ex `flex: 2 2 300px`: sets `flex-grow` to `2`, `flex-shirnk` to `2` and `fex-basis` to `300px`.
+
