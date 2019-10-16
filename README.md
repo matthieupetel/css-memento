@@ -112,3 +112,15 @@ One value with unit: flex-basis
 **With three values:**
 - ex `flex: 2 2 300px`: sets `flex-grow` to `2`, `flex-shirnk` to `2` and `fex-basis` to `300px`.
 
+To summarize in a table :  
+
+| flex:       | grow      | shrink    | basis     |
+|:-----------:|:---------:|:---------:|:---------:|
+| auto        | 1         | 1         | auto      |
+| initial     | initial   | initial   | initial   |
+| none        | 0         | 0         | auto      |
+| 2           | 2         | 1         | 0         |
+| 50px        | 1         | 1         | 50px      |
+| 2 2         | 2         | 2         | 0         |
+| 1 300px     | 1         | 1         | 300px     |
+| 2 2 300px   | 2         | 2         | 300px     |
