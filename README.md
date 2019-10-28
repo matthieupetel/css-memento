@@ -100,27 +100,27 @@ container.
 - `flex: none`: stands for `0 0 auto`, item will neither grow nor shrink.
 
 One unitless value: flex-grow
-- ex `flex: 2`: sets `flex-grow` to `2`, `flex-shirnk` to `1` and `fex-basis` to `0`.
+- ex `flex: 2`: sets `flex-grow` to `2`, `flex-shrink` to `1` and `fex-basis` to `0`.
 
 One value with unit: flex-basis  
 - ex `flex: 50px`: sets `flex-grow` to `1`, `flex-shrink` to `1` and `flex-basis` to `50px`.
 
 **With two values:** the value with unit is for `flex-basis`
-- ex `flex: 2 2`: sets `flex-grow` to `2`, `flex-shirnk` to `2` and `fex-basis` to `0`.
-- ex `flex: 1 300px`: sets `flex-grow` to `1`, `flex-shirnk` to `1` and `fex-basis` to `300px`.
+- ex `flex: 2 2`: sets `flex-grow` to `2`, `flex-shrink` to `2` and `fex-basis` to `0`.
+- ex `flex: 1 300px`: sets `flex-grow` to `1`, `flex-shrink` to `1` and `fex-basis` to `300px`.
 
 **With three values:**
-- ex `flex: 2 2 300px`: sets `flex-grow` to `2`, `flex-shirnk` to `2` and `fex-basis` to `300px`.
+- ex `flex: 2 2 300px`: sets `flex-grow` to `2`, `flex-shrink` to `2` and `fex-basis` to `300px`.
 
 To summarize in a table :  
 
-| flex:       | grow      | shrink    | basis     |
-|:-----------:|:---------:|:---------:|:---------:|
-| auto        | 1         | 1         | auto      |
-| initial     | initial   | initial   | initial   |
-| none        | 0         | 0         | auto      |
-| 2           | 2         | 1         | 0         |
-| 50px        | 1         | 1         | 50px      |
-| 2 2         | 2         | 2         | 0         |
-| 1 300px     | 1         | 1         | 300px     |
-| 2 2 300px   | 2         | 2         | 300px     |
+| flex:         | grow      | shrink    | basis     |
+|---------------|:---------:|:---------:|:---------:|
+| **auto**      | 1         | 1         | auto      |
+| **initial**   | initial   | initial   | initial   |
+| **none**      | 0         | 0         | auto      |
+| **2**         | 2         | 1         | 0         |
+| **50px**      | 1         | 1         | 50px      |
+| **2 2**       | 2         | 2         | 0         |
+| **1 300px**   | 1         | 1         | 300px     |
+| **2 2 300px** | 2         | 2         | 300px     |
